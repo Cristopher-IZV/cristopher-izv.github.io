@@ -15,11 +15,10 @@
 
         body {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
         }
 
         header {
-
-            background-color: grey;
             padding: 15px;
             text-align: center;
             font-size: 50px;
@@ -36,19 +35,26 @@
 
         nav {
             width: 100%;
-            height: 30px;
+            height: 40px;
             background: #ccc;
-            padding: 0;
+            margin-right: 40px;
+            padding: 10px;
         }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        a {
+            text-decoration: none;
+            margin-right: 30px;
         }
 
-        nav li {
-            display: inline;
-            margin-right: 10px;
+        a:hover {
+            background-color: white;
+            color: black
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
         }
 
         article {
@@ -56,7 +62,8 @@
             padding: 20px;
             width: 70%;
             background-color: white;
-            height: 1500px;
+            height: 2500px;
+            margin-bottom: 10px;
         }
 
         aside {
@@ -64,16 +71,27 @@
             padding: 20px;
             width: 30%;
             background-color: #ccc;
-            height: 1500px;
+            height: 2000px;
+            margin-bottom: 10px;
         }
 
         footer {
-            background-color: grey;
-            padding: 20px;
+            background: grey;
+            padding: 10px;
             text-align: center;
             color: white;
             font-size: 20px;
+            clear: both;
+        }
 
+        @media (max-width: 600px) {
+
+            section,
+            article,
+            aside {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -83,58 +101,186 @@
         Blackout Tattoo Project
     </header>
 
-
     <section>
-
-        <h3>Sección</h3>
-
+        <h3></h3>
         <nav>
-            <ul>
-                <li>
-                    <a href="shop/shop.html">Shop</a>
-                </li>
-
-                <li>
-                    <a href="contact/contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="images/Images.html">Gallery</a>
-                </li>
-            </ul>
+            <a href="shop/shop.html">Shop</a>
+            <a href="contact/contact.html">Contact</a>
+            <a href="images/Images.html">Gallery</a>
+            <a href="about/aboutUs.html">About Us</a>
         </nav>
     </section>
 
     <article>
-        <h1>Expo</h1>
-        <p>El tatuaje ya no es un estigma, pero tampoco una moda. La moda es pasajera, el tatuaje es para siempre.</p>
-        <p>Con el paso de los años, los diferentes movimientos sociales hicieron aparecer y desaparecer cíclicamente los
-            tatuajes. Y, en la actualidad, la práctica de hacerse diseños permanentes en la piel ha resurgido con
-            fuerza.</p>
-        <p>El relevo generacional ha hecho que la connotación negativa otorgada a los tatuajes empiece a ser un
-            recuerdo, pues hoy en día tatuarse la piel supone una forma de autoexpresión, de identidad personal.
-            Asimismo, gracias al auge que vive el mundo del tatuaje, han surgido diferentes técnicas y estilos de
-            tattoos, además de aumentar el número de estudios y de la capacitación de los profesionales para ejercer la
-            profesión de tatuador con todas las garantías. De hecho, te puede interesar este post sobre cómo empezar a
-            tatuar.</p>
-        <p>Así pues, el tatuaje ha pasado de ser un símbolo místico y un distintivo de delincuencia a una forma de
-            expresión que ha dado lugar a un negocio muy potente y al que puedes acceder a través de un máster en
-            tatuajes como el que ofrecemos en Escuela Des Arts. No lo dudes más, empieza a estudiar tatuaje ahora.</p>
+
+        <h1>El Arte del Tatuaje: Más Allá de la Piel</h1>
+
+        <p>El tatuaje, una forma de expresión artística arraigada en la historia de la humanidad, va más allá de ser una
+            simple marca en la piel. Es un medio poderoso para contar historias, expresar identidades y fusionar
+            creatividad con el cuerpo humano.</p>
+
+        <p>En esta página, podrás explorar y adquirir una amplia gama de productos relacionados con el mundo del
+            tatuaje.
+            Desde máquinas para tatuar y tintas de alta calidad hasta todo el material necesario para realizar tatuajes
+            profesionales. También encontrarás una breve historia de los tatuajes, destacando su evolución a lo largo de
+            los siglos.</p>
+
+        <h2>Definición y Significado:</h2>
+
+        <p>En su esencia, un tatuaje es la inserción de pigmentos de tinta bajo la piel para crear diseños duraderos.
+            Estos diseños pueden variar desde símbolos pequeños y significativos hasta complejas obras de arte que
+            abarcan grandes áreas del cuerpo.</p>
+
+        <h2>Funcionamiento General:</h2>
+
+        <p>La aplicación de un tatuaje implica el uso de una máquina de tatuaje especializada. Estas máquinas, ya sean
+            de bobina o rotativas, utilizan agujas para depositar la tinta en la dermis, la capa más profunda de la
+            piel. Este proceso asegura que el diseño sea permanente, ya que la dermis no se renueva con la misma
+            frecuencia que la epidermis.</p>
+
+        <h2>Tipos de Máquinas de Tatuaje:</h2>
+
+        <a href="#bobina">
+            <p>Máquinas de bobina</p>
+        </a>
+        <a href="#rotativa">
+            <p>Máquinas rotativas</p>
+        </a>
+        <a href="#pen">
+            <p>Máquinas tipo pen</p>
+        </a>
+
+        <h2 id="bobina">Máquinas de Bobina: Tradición y Potencia</h2>
+
+        <img src="images/maquinas-para-tatuar.jpg" alt="Máquina de bobina" style="width: 200px; height: 200px;">
+
+        <p>Las máquinas de bobina, también conocidas como máquinas de inducción electromagnética, son un pilar en la
+            historia del tatuaje. Inventadas por Samuel O'Reilly en la década de 1890, estas máquinas han sido
+            fundamentales en la evolución del arte del tatuaje.</p>
+
+        <h3>Historia:</h3>
+
+        <p>Samuel O'Reilly adaptó una máquina eléctrica diseñada originalmente para grabar números en carne para
+            crear la primera máquina de tatuar de bobina. Esta innovación permitió a los artistas del tatuaje
+            controlar la velocidad y la fuerza de la aguja de manera más precisa, revolucionando la industria y
+            allanando el camino para la profesionalización del tatuaje.</p>
+
+        <h3>Funcionamiento:</h3>
+
+        <p>Las máquinas de bobina funcionan mediante un sistema de bobinas y núcleos de metal. Cuando se aplica
+            corriente eléctrica, las bobinas generan un campo magnético que atrae y libera un brazo metálico unido a
+            una aguja. Este movimiento ascendente y descendente de la aguja permite la inserción de tinta en la
+            piel.</p>
+
+        <p>Estas máquinas son conocidas por su potencia y versatilidad. Son ideales para líneas definidas y
+            sombreados, lo que las convierte en una opción preferida para artistas que buscan precisión y control en
+            sus obras.</p>
+
+        <h2 id="rotativa">Máquinas Rotativas: Innovación y Versatilidad</h2>
+
+        <img src="images/maquinas-para-tatuar2.jpg" alt="Máquina rotativa" style="width: 200px; height: 200px;">
+
+        <p>Las máquinas rotativas, una evolución más reciente en la historia del tatuaje, han ganado popularidad
+            gracias a su diseño compacto y suavidad en el uso. Desarrolladas en la década de 1970, estas máquinas
+            han cambiado la dinámica del tatuaje contemporáneo.</p>
+
+        <h3>Historia:</h3>
+
+        <p>La máquina rotativa fue inventada por Manfred Kohrs, un ingeniero alemán, como respuesta a la necesidad
+            de una herramienta más silenciosa y eficiente. Este tipo de máquinas fue adoptado rápidamente en la
+            industria del tatuaje debido a su menor vibración y peso ligero.</p>
+
+        <h3>Funcionamiento:</h3>
+
+        <p>Las máquinas rotativas funcionan con un motor que impulsa directamente la aguja. Este diseño reduce la
+            fricción y el ruido, proporcionando a los artistas mayor precisión en detalles finos y una experiencia
+            de tatuaje más cómoda para los clientes.</p>
+
+        <p>Estas máquinas son versátiles y excelentes para líneas detalladas, sombreados suaves y rellenos de color.
+            Su diseño ergonómico y facilidad de uso han contribuido a su creciente popularidad en la escena del
+            tatuaje contemporáneo.</p>
+
+        <h2 id="pen">Máquinas Tipo Pen: Innovación Ergonómica</h2>
+
+        <img src="images/maquinas-para-tatuar3.jpg" alt="Máquina de bobina" style="width: 200px; height: 200px;">
+
+        <p>Las máquinas de tatuaje tipo pen son la última innovación en la evolución de las herramientas para tatuar.
+            Inspiradas en la simplicidad de los bolígrafos, estas máquinas ofrecen una experiencia ergonómica y cómoda
+            tanto para los artistas como para los clientes.</p>
+
+        <h3>Características:</h3>
+
+        <p>Estas máquinas suelen tener un diseño similar a un bolígrafo, con la aguja ubicada en la parte inferior.
+            Funcionan mediante un mecanismo de pistón o un motor que impulsa la aguja hacia adelante y hacia atrás. Su
+            diseño ergonómico permite un control preciso y un manejo cómodo durante largas sesiones de tatuaje.</p>
+
+        <h3>Ventajas:</h3>
+
+        <p>La principal ventaja de las máquinas tipo pen es su facilidad de uso y su diseño ergonómico, lo que reduce la
+            fatiga del artista. Además, son ideales para detalles finos y líneas precisas. Algunos artistas también
+            aprecian la capacidad de ajustar la profundidad de la aguja de manera más sencilla.</p>
+
+        <p>En resumen, las máquinas tipo pen representan la última innovación en la industria del tatuaje, brindando
+            comodidad y precisión a artistas y clientes por igual.</p>
+
     </article>
     <aside>
-        <p>Aside!</p>
+        <h2>Historia de los Tatuajes</h2>
+        <p>
+            <cite>El tatuaje ya no es un estigma, pero tampoco una moda. La moda es pasajera, el tatuaje es para
+                siempre.</cite> -Anónimo
+        </p>
         <div>
-            <img src="images/pic5.jpg" alt="Tattoo" style="width: 300px; height: 300px;">
-            <p>Del antiguo Egipto a marineros europeos. Sí, como lo lees. En Europa, el tatuaje fue redescubierto en
-                1769 después de una expedición inglesa comandada por el explorador y capitán James Cook. Este recorrió
-                el mundo en velero y, al volver de las islas de Tahití y la Polinesia, donde los tatuajes se practicaban
-                abiertamente, se trajo con él la palabra “tatau”, que en polinés significa “marcar”.</p>
+            <img src="images/pic5.jpg" alt="Tattoo" style="width: 200px; height: 200px;">
         </div>
+        <p>La historia de los tatuajes es tan antigua como la humanidad misma. Se remonta a tiempos prehistóricos, donde
+            las tribus utilizaban tatuajes como parte de rituales ceremoniales o como símbolos de estatus dentro de la
+            comunidad.</p>
+
+        <p>A lo largo de los siglos, los tatuajes han desempeñado diversos roles en diferentes culturas. Han sido
+            utilizados para representar la identidad personal, la pertenencia a grupos, los logros personales y, en
+            algunos casos, incluso como formas de castigo o marcaje.</p>
+
+        <p>Un hito importante en la historia del tatuaje fue el redescubrimiento en Europa durante el siglo XVIII. En
+            1769, el explorador y capitán James Cook lideró una expedición inglesa que lo llevó a las islas de Tahití y
+            la Polinesia, donde los tatuajes eran practicados abiertamente. Cook se trajo consigo la palabra "tatau" del
+            polinesio, que significa "marcar". Este redescubrimiento marcó el renacimiento del interés europeo en los
+            tatuajes.</p>
+
+        <p>Hoy en día, los tatuajes han evolucionado más allá de simples marcas en la piel. Se han convertido en una
+            forma de arte altamente respetada, donde los artistas del tatuaje combinan habilidades técnicas con
+            creatividad para crear obras únicas y personales. Cada tatuaje cuenta una historia y refleja la
+            individualidad de quien lo lleva.</p>
+
+        <h1>Blackout Tattoo Style</h1>
+        <h2>¿Qué es el Estilo Blackout en Tatuajes?</h2>
+        <p>El estilo de tatuaje blackout es una forma única y audaz de expresión artística que se ha vuelto cada vez más
+            popular en la comunidad del tatuaje. Se caracteriza por el uso de áreas negras sólidas y densas para crear
+            diseños impactantes y llamativos.</p>
+
+        <h2>Origen</h2>
+        <p>El blackout no tiene un origen específico, pero se inspira en técnicas de tatuaje tradicionales, donde se
+            utilizan sombras y rellenos para dar profundidad y contraste a los diseños. A lo largo del tiempo, los
+            artistas del tatuaje han llevado estas técnicas al extremo, creando composiciones donde gran parte o la
+            totalidad del área está llena de tinta negra.</p>
+
+        <h2>Características Distintivas</h2>
+        <p>Las características distintivas del estilo blackout incluyen la ausencia de contornos definidos, enfocándose
+            en formas y contrastes creados por áreas negras sólidas. Puede aplicarse a una variedad de diseños, desde
+            patrones geométricos hasta retratos y elementos naturales.</p>
+
+        <h2>Popularidad y Significado</h2>
+        <p>El blackout ha ganado popularidad debido a su estética única y moderna. Además de su impacto visual, algunos
+            individuos eligen este estilo por razones simbólicas, ya que puede representar la superación de obstáculos,
+            la transformación o simplemente la apreciación de la simplicidad y la fuerza del color negro.</p>
+
+
     </aside>
 
     <footer>
 
         <p>
-            <a href="about/aboutUs.html">About Us</a>
+            <a href="privacy.html">Política de privacidad</a>
         </p>
 
     </footer>
