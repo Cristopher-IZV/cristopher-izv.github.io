@@ -62,8 +62,16 @@
             padding: 20px;
             width: 70%;
             background-color: white;
-            height: 2500px;
+            height: 100%;
             margin-bottom: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid black;
+            border-collapse: collapse;
+
         }
 
         aside {
@@ -71,7 +79,7 @@
             padding: 20px;
             width: 30%;
             background-color: #ccc;
-            height: 2000px;
+            height: 100%;
             margin-bottom: 10px;
         }
 
@@ -91,13 +99,14 @@
             aside {
                 width: 100%;
                 height: auto;
+
             }
         }
     </style>
 </head>
 
 <body>
-    <header style="background-image: url('images/pic2.jpg');">
+    <header style="background-image: url('images/pic2.jpg');" id="inicio">
         Blackout Tattoo Project
     </header>
 
@@ -108,6 +117,7 @@
             <a href="contact/contact.html">Contact</a>
             <a href="images/Images.html">Gallery</a>
             <a href="about/aboutUs.html">About Us</a>
+            <a href="#envio">Gastos de envío</a>
         </nav>
     </section>
 
@@ -119,8 +129,8 @@
             simple marca en la piel. Es un medio poderoso para contar historias, expresar identidades y fusionar
             creatividad con el cuerpo humano.</p>
 
-        <p>En esta página, podrás explorar y adquirir una amplia gama de productos relacionados con el mundo del
-            tatuaje.
+        <p><strong>En esta página, podrás explorar y adquirir una amplia gama de productos relacionados con el mundo del
+                tatuaje.</strong>
             Desde máquinas para tatuar y tintas de alta calidad hasta todo el material necesario para realizar tatuajes
             profesionales. También encontrarás una breve historia de los tatuajes, destacando su evolución a lo largo de
             los siglos.</p>
@@ -138,21 +148,25 @@
             piel. Este proceso asegura que el diseño sea permanente, ya que la dermis no se renueva con la misma
             frecuencia que la epidermis.</p>
 
-        <h2>Tipos de Máquinas de Tatuaje:</h2>
+        <h2>Tipos de Máquinas de Tatuaje: </h2>
+        <ol>
+            <li><a href="#bobina">Máquinas de bobina</a></li>
+            <li><a href="#rotativa">Máquinas rotativas</a></li>
+            <li><a href="#pen">Máquinas tipo pen</a></li>
+        </ol>
 
-        <a href="#bobina">
-            <p>Máquinas de bobina</p>
-        </a>
-        <a href="#rotativa">
-            <p>Máquinas rotativas</p>
-        </a>
-        <a href="#pen">
-            <p>Máquinas tipo pen</p>
-        </a>
+        <h2>Tipos de agujas: </h2>
+        <ol>
+            <li><a href="#rl">Round Liner (RL)</a></li>
+            <li><a href="#rs">Round Shader (RS)</a></li>
+            <li><a href="#mag">Magnum (M1 y M2)</a></li>
+            <li><a href="#rm">Magnum Curvada (RM)</a></li>
+            <li><a href="#flat">Flat Magnum (F)</a></li>
+        </ol>
+
 
         <h2 id="bobina">Máquinas de Bobina: Tradición y Potencia</h2>
-
-        <img src="images/maquinas-para-tatuar.jpg" alt="Máquina de bobina" style="width: 200px; height: 200px;">
+        <img src="images/maquinas-para-tatuar.jpg" alt="Máquina de bobina" style="width: 300px; height: 300px;">
 
         <p>Las máquinas de bobina, también conocidas como máquinas de inducción electromagnética, son un pilar en la
             historia del tatuaje. Inventadas por Samuel O'Reilly en la década de 1890, estas máquinas han sido
@@ -176,9 +190,39 @@
             sombreados, lo que las convierte en una opción preferida para artistas que buscan precisión y control en
             sus obras.</p>
 
+        <ul>
+            <li>
+                <h3>Agujas:</h3>
+                <ul>
+                    <li>Utilizan agujas tradicionales montadas en barras.</li>
+                    <li>Configuraciones comunes incluyen Round Liner (RL) y Magnum (M1, M2).</li>
+                    <li>Pueden adaptarse para usar sistemas de cartuchos en algunos casos.</li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Ventajas:</h3>
+                <ul>
+                    <li>Potencia y versatilidad.</li>
+                    <li>Ideales para líneas definidas y sombreados precisos.</li>
+                    <li>Amplia historia en la industria del tatuaje.</li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Inconvenientes:</h3>
+                <ul>
+                    <li>Mayor vibración y ruido en comparación con las máquinas rotativas.</li>
+                    <li>Requieren más ajustes manuales para cambiar la configuración de las agujas.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img src="images/agujabobina.jpg" alt="Needle" style="width: 300px; height: 300px;">
+
         <h2 id="rotativa">Máquinas Rotativas: Innovación y Versatilidad</h2>
 
-        <img src="images/maquinas-para-tatuar2.jpg" alt="Máquina rotativa" style="width: 200px; height: 200px;">
+        <img src="images/maquinas-para-tatuar2.jpg" alt="Máquina rotativa" style="width: 300px; height: 300px;">
 
         <p>Las máquinas rotativas, una evolución más reciente en la historia del tatuaje, han ganado popularidad
             gracias a su diseño compacto y suavidad en el uso. Desarrolladas en la década de 1970, estas máquinas
@@ -199,10 +243,39 @@
         <p>Estas máquinas son versátiles y excelentes para líneas detalladas, sombreados suaves y rellenos de color.
             Su diseño ergonómico y facilidad de uso han contribuido a su creciente popularidad en la escena del
             tatuaje contemporáneo.</p>
+        <ul>
+            <li>
+                <h3>Agujas:</h3>
+                <ul>
+                    <li>Utilizan agujas específicas adaptadas para el movimiento rotativo.</li>
+                    <li>Configuraciones comunes incluyen Round Liner (RL) y Magnum (M1, M2).</li>
+                    <li>Son compatibles con sistemas de cartuchos (Con adaptadores).</li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Ventajas:</h3>
+                <ul>
+                    <li>Diseño compacto y suavidad en el uso.</li>
+                    <li>Menor vibración y peso ligero.</li>
+                    <li>Mayor precisión en detalles finos y comodidad para el cliente.</li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Inconvenientes:</h3>
+                <ul>
+                    <li>Mayor costo inicial en comparación con las máquinas de bobina.</li>
+                    <li>Menos potencia en algunas situaciones específicas.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img src="images/grip.jpg" alt="Grip Rotativa" style="width: 300px; height: 300px;">
 
         <h2 id="pen">Máquinas Tipo Pen: Innovación Ergonómica</h2>
 
-        <img src="images/maquinas-para-tatuar3.jpg" alt="Máquina de bobina" style="width: 200px; height: 200px;">
+        <img src="images/maquinas-para-tatuar3.jpg" alt="Máquina de bobina" style="width: 300px; height: 300px;">
 
         <p>Las máquinas de tatuaje tipo pen son la última innovación en la evolución de las herramientas para tatuar.
             Inspiradas en la simplicidad de los bolígrafos, estas máquinas ofrecen una experiencia ergonómica y cómoda
@@ -220,9 +293,124 @@
             fatiga del artista. Además, son ideales para detalles finos y líneas precisas. Algunos artistas también
             aprecian la capacidad de ajustar la profundidad de la aguja de manera más sencilla.</p>
 
-        <p>En resumen, las máquinas tipo pen representan la última innovación en la industria del tatuaje, brindando
+        <p>Las máquinas tipo pen representan la última innovación en la industria del tatuaje, brindando
             comodidad y precisión a artistas y clientes por igual.</p>
 
+        <ul>
+            <li>
+                <h3>Agujas:</h3>
+                <ul>
+                    <li>Utilizan exclusivamente agujas de cartucho.</li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Ventajas:</h3>
+                <ul>
+                    <li>Diseño ergonómico inspirado en bolígrafos.</li>
+                    <li>Facilidad de uso y comodidad para artistas y clientes.</li>
+                    <li>Control preciso y manejo cómodo durante largas sesiones.</li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Inconvenientes:</h3>
+                <ul>
+                    <li>Menos potencia en comparación con algunas máquinas de bobina.</li>
+                    <li>Menor versatilidad en comparación con las máquinas rotativas para ciertos estilos.</li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <img src="images/cartucho.jpg" alt="Cartucho máquina" style="width: 300px; height: 300px;">
+
+        <h2 id="rl">Round Liner (RL)</h2>
+        <p>Las agujas Round Liner son ideales para líneas nítidas y detalles precisos. Están dispuestas en una
+            configuración circular, con un solo grupo de agujas alineadas en un círculo. Los tamaños comunes para las
+            Round Liner incluyen 3RL, 5RL, 7RL, etc. Cuanto menor sea el número, más finas y estrechas serán las agujas,
+            permitiendo líneas más delicadas.</p>
+
+        <p>Se suelen hacer agrupaciones desde 1 a 20 agujas, pero esta cifra puede variar en función de cada artista.
+        </p>
+
+        <img src="images/rl.jpg" alt="RL needle" style="width: 600px; height: 200px;">
+
+        <h2 id="rs">Round Shader (RS)</h2>
+        <p>Las agujas Round Shader también están dispuestas en una configuración circular, pero están diseñadas para
+            sombreado y relleno. Vienen en tamaños como 5RS, 7RS, 9RS, etc. Cuanto mayor sea el número, más ancha será
+            la agrupación de agujas, lo que permite un sombreado más suave y una cobertura más rápida.</p>
+
+        <p>Las agrupaciones de la Round Shader van de 3 a 30 agujas aproximadamente.</p>
+
+        <img src="images/rs.jpg" alt="RS needle" style="width: 600px; height: 200px;">
+
+        <h2 id="mag">Magnum (M1 M2)</h2>
+        <p>Las agujas Magnum se utilizan para sombreado y relleno en áreas más grandes. Hay dos tipos principales:
+            Magnum Simple (M1) y Magnum Doble (M2). Las Magnum Simple tienen una fila de agujas, mientras que las Magnum
+            Doble tienen dos filas paralelas. Los tamaños comunes son 7M1, 9M1, 11M2, etc. Las Magnum son versátiles y
+            permiten un sombreado suave y uniforme.</p>
+
+        <p>Permite agrupaciones de entre 5 y 49 agujas aproximadamente, aunque con las Magnum podemos extendernos con
+            las cantidades de micropuntas si el tatuaje lo requiere.</p>
+
+        <img src="images/magnum.jpg" alt="Magnum needle" style="width: 1000px; height: 200px;">
+
+        <h2 id="rm">Curved Magnum (RM)</h2>
+        <p>Las agujas Curved Magnum tienen una disposición curva de las agujas, lo que las hace ideales para seguir los
+            contornos naturales del cuerpo. Son excelentes para sombreado y relleno en áreas más grandes, proporcionando
+            una apariencia suave y fluida. Los tamaños comunes son 9CM, 13CM, 15CM, etc.</p>
+
+        <p>Las agrupaciones de la RM oscilan entre 5 y 49 agujas, igual que las demás Magnums.</p>
+
+        <img src="images/RM.jpg" alt="Magnum needle" style="width: 1000px; height: 150px;">
+
+        <h2 id="flat">Flat Magnum (F)</h2>
+        <p>Por último, encontramos la Flat Magnum, que distribuye las agujas muy juntas en una sola línea. Sirve para
+            sombrear de forma densa y crear formas geométricas ya que sus bordes se verán bien delimitados a la hora de
+            tatuar.</p>
+        <p>La Flat Magnum permite agrupaciones desde 4 a 11 agujas aproximadamente. De nuevo, debe quedar claro que
+            estas cantidades pueden variar dependiendo del artista y sus necesidades.</p>
+
+        <img src="images/fm.jpg" alt="Magnum needle" style="width: 1000px; height: 200px;">
+
+        <h1 id="envio">Gastos de envío</h1>
+        <table>
+            <tr>
+                <th>Zona</th>
+                <th>Tipo de envío</th>
+                <th>Coste</th>
+                <th>Tiempo de entrega</th>
+            </tr>
+            <tr>
+                <td>Península</td>
+                <td>Exprés</td>
+                <td>10,99 €</td>
+                <td>De 24 a 72 horas</td>
+            </tr>
+            <tr>
+                <td>Islas Baleares</td>
+                <td>Correo ordinario</td>
+                <td>15,99 €</td>
+                <td>de 10 a 15 días</td>
+            </tr>
+            <tr>
+                <td>Islas Canarias</td>
+                <td>Correo ordinario</td>
+                <td>15,99 €</td>
+                <td>de 10 a 15 días</td>
+            </tr>
+            <tr>
+                <td>Internacional</td>
+                <td>Correo ordinario</td>
+                <td>Contáctanos</td>
+                <td>Contáctanos</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center ;">Compras superiores a 150 € envío gratis! (Sólo nacional)
+                </td>
+            </tr>
+        </table>
     </article>
     <aside>
         <h2>Historia de los Tatuajes</h2>
@@ -231,7 +419,7 @@
                 siempre.</cite> -Anónimo
         </p>
         <div>
-            <img src="images/pic5.jpg" alt="Tattoo" style="width: 200px; height: 200px;">
+            <img src="images/pic5.jpg" alt="Tattoo" style="width: 250px; height: 250px;">
         </div>
         <p>La historia de los tatuajes es tan antigua como la humanidad misma. Se remonta a tiempos prehistóricos, donde
             las tribus utilizaban tatuajes como parte de rituales ceremoniales o como símbolos de estatus dentro de la
@@ -274,13 +462,40 @@
             individuos eligen este estilo por razones simbólicas, ya que puede representar la superación de obstáculos,
             la transformación o simplemente la apreciación de la simplicidad y la fuerza del color negro.</p>
 
+    </aside>
+
+    <aside>
+        <h1>Últimas novedades</h1>
+
+        <h2>Próximos Eventos</h2>
+
+        <p>Barcelona Tattoo Expo 2024</p>
+
+        <a href="https://www.worldtattooevents.com/barcelona-tattoo-expo/" target="_blank">
+            <img src="images/bcnexpo.jpg" alt="bcn expo" style="height: 250px; width: 250px;"></a>
+
+        <p>Spain Tattoo Expo</p>
+        <a href="https://spaintattooexpo.com/" target="_blank">
+            <img src="images/cabecera-alicante-2023.jpg" alt="bcn expo" style="height: 200px; width: 300px;">
+        </a>
+
+        <h1>Eventos anteriores</h1>
+
+        <p>Barcelona Tattoo Expo 2023</p>
+
+        <img src="images/Barcelona-Tattoo-Expo-2023-2.jpg" alt="bcn expo" style="height: 300px; width: 200px;">
+
+        <p>Barcelona Tattoo Expo 2022</p>
+
+        <img src="images/Barcelona-Tattoo-Expo-2022.jpg" alt="bcn expo" style="height: 300px; width: 200px;">
 
     </aside>
 
     <footer>
 
         <p>
-            <a href="privacy.html">Política de privacidad</a>
+            <a href="privacy/privacy.html">Política de privacidad</a>
+            <a href="#inicio">Volver al inicio</a>
         </p>
 
     </footer>
