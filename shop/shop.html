@@ -36,7 +36,7 @@
 
         nav {
             width: 100%;
-            height: 40px;
+            height: 100%;
             background: #ccc;
             margin-right: 40px;
             padding: 10px;
@@ -105,7 +105,7 @@
     </header>
 
     <section>
-        <h3></h3>
+        <h4>Menú de Navegación</h4>
         <nav>
             <a href="../index.html">Inicio</a>
         </nav>
@@ -159,8 +159,8 @@
                 Efecto pulido, acabado en óxido negro sobre hierro.
                 Firmadas a mano por Victor Portugal.
             </p>
-            <input type="checkbox" id="byVictor"> <label for="byVictor">Añadir</label> <br>
-            <label for="cantidadbyVictor">Cantidad (máximo 5)</label> <input type="number" id="cantidadbyVictor"
+            <input type="checkbox" id="byVictor2"> <label for="byVictor2">Añadir</label> <br>
+            <label for="cantidadbyVictor2">Cantidad (máximo 5)</label> <input type="number" id="cantidadbyVictor2"
                 name="cantidad" min="1" max="5">
         </fieldset>
 
@@ -235,8 +235,8 @@
             <p>Agujas de tatuar esterilizadas con gas de óxido de etileno. Un solo uso, no reutilizar.</p>
             <p>Caja de 25 unidades</p>
             <input type="checkbox" id="royal"> <label for="royal">Añadir</label> <br>
-            <label type="size">Medida</label> <br>
-            <select id="size" name="size">
+            <label for="roundlinerAk">Medida</label> <br>
+            <select id="roundlinerAk" name="roundlinerAk">
                 <option value="1">3 RL</option>
                 <option value="2">5 RL</option>
                 <option value="3">7 RL</option>
@@ -255,9 +255,9 @@
             <p>PVP 12,10 €</p>
             <p>Agujas de tatuar esterilizadas con gas de óxido de etileno. Un solo uso, no reutilizar.</p>
             <p>Caja de 25 unidades</p>
-            <input type="checkbox" id="royal"> <label for="royal">Añadir</label> <br>
-            <label type="size">Medida</label> <br>
-            <select id="size" name="size">
+            <input type="checkbox" id="royalRS"> <label for="royalRS">Añadir</label> <br>
+            <label for="roundshaderAk">Medida</label> <br>
+            <select id="roundshaderAk" name="roundshaderAk">
                 <option value="6">7 RS</option>
                 <option value="7">9 RS</option>
                 <option value="8">11 RS</option>
@@ -276,16 +276,16 @@
             <p>PVP 10,89 €</p>
             <p>Agujas de tatuar esterilizadas con gas de óxido de etileno. Un solo uso, no reutilizar.</p>
             <p>Caja de 25 unidades</p>
-            <input type="checkbox" id="royal"> <label for="royal">Añadir</label> <br>
-            <label type="size">Medida</label> <br>
-            <select id="size" name="size">
+            <input type="checkbox" id="royalM"> <label for="royalM">Añadir</label> <br>
+            <label for="magnumAk">Medida</label> <br>
+            <select id="magnumAk" name="magnumAk">
                 <option value="11">5 MG</option>
                 <option value="12">7 MG</option>
                 <option value="13">9 MG</option>
                 <option value="14">11 MG</option>
             </select>
             <br>
-            <label for="ak2">Cantidad (máximo 5)</label> <input type="number" id="ak2" name="cantidad" min="1" max="5">
+            <label for="ak3">Cantidad (máximo 5)</label> <input type="number" id="ak3" name="cantidad" min="1" max="5">
         </fieldset>
 
         <h3>Rotativas</h3>
@@ -301,8 +301,8 @@
             <p>Grip con aguja de alta calidad, esterilizadas con EO gas, un solo uso.</p>
             <p>Caja de 20 unidades</p>
             <input type="checkbox" id="ultra1"> <label for="ultra1">Añadir</label> <br>
-            <label type="size">Medida</label> <br>
-            <select id="size" name="size">
+            <label for="premiumRL">Medida</label> <br>
+            <select id="premiumRL" name="premiumRL">
                 <option value="15">3 RL</option>
                 <option value="16">5 RL</option>
                 <option value="17">7 RL</option>
@@ -326,9 +326,9 @@
             <p>PVP 12 €</p>
             <p>Caja de cartuchos homologados Viking. Con membrana.</p>
             <p>Caja de 10 unidades</p>
-            <input type="checkbox" id="viking1"> <label for="viking">Añadir</label> <br>
-            <label type="size">Medida</label> <br>
-            <select id="size" name="size">
+            <input type="checkbox" id="viking"> <label for="viking">Añadir</label> <br>
+            <label for="vikingRoundL">Medida</label> <br>
+            <select id="vikingRoundL" name="vikingRoundL">
                 <option value="20">3 RL</option>
                 <option value="21">5 RL</option>
                 <option value="22">7 RL</option>
@@ -348,9 +348,9 @@
             <p>PVP 12 €</p>
             <p>Caja de cartuchos homologados Viking. Con membrana.</p>
             <p>Caja de 10 unidades</p>
-            <input type="checkbox" id="viking1"> <label for="viking2">Añadir</label> <br>
-            <label type="size">Medida</label> <br>
-            <select id="size" name="size">
+            <input type="checkbox" id="viking2"> <label for="viking2">Añadir</label> <br>
+            <label for="vikingShader">Medida</label> <br>
+            <select id="vikingShader" name="vikingShader">
                 <option value="20">3 RL</option>
                 <option value="21">5 RL</option>
                 <option value="22">7 RL</option>
@@ -358,7 +358,7 @@
                 <option value="24">11 RL</option>
             </select>
             <br>
-            <label for="vikingC">Cantidad (máximo 5)</label> <input type="number" id="vikingC" name="cantidad" min="1"
+            <label for="vikingS">Cantidad (máximo 5)</label> <input type="number" id="vikingS" name="cantidad" min="1"
                 max="5">
         </fieldset>
 
@@ -371,8 +371,8 @@
             <p>Caja de cartuchos homologados Viking. Con membrana.</p>
             <p>Caja de 10 unidades</p>
             <input type="checkbox" id="viking3"> <label for="viking3">Añadir</label> <br>
-            <label type="size">Medida</label> <br>
-            <select id="size" name="size">
+            <label for="vikingMag">Medida</label> <br>
+            <select id="vikingMag" name="vikingMag">
                 <option value="25">5 MG</option>
                 <option value="26">7 MG</option>
                 <option value="27">9 MG</option>
