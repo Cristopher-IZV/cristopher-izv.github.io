@@ -13,12 +13,12 @@ body{
     color: black;
     text-align: right;
     background: beige;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 30px;
+    padding: 0px;
     color: whitesmoke;
     text-align: center;
     background-image: url(images/back2.jpg);
@@ -27,14 +27,14 @@ header{
 
 nav{
     display: flex;
-    justify-content:center;
+    justify-content: center;
     background: greenyellow;
 }
 
 nav a{
     color: brown;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
 }
 
@@ -45,7 +45,7 @@ nav a:hover{
 
 section{
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -68,4 +68,9 @@ article{
 
 footer{
     text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
 }
