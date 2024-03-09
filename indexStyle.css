@@ -68,7 +68,6 @@ body {
 }
 
 
-
 h1 {
     font-size: 30px;
     text-align: center;
@@ -150,5 +149,7 @@ li {
 @media screen and (max-width: 600px) {
     .footer div {
         float: none;
+        margin: 0 auto;
+        width: 80%;
     }
 }
