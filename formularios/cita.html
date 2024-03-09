@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cristopher Clegan Alarcón">
+    <meta name="description" content="Sitio web para los entusiastas del preparacionismo y bushcraft">
+    <meta name="keywords" content="bushcraft, preppers, preparación">
+    <meta http-equiv="content-language" content="es">
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon2.ico">
+    <title>Preppers & Chill Contacto</title>
+    <style>
+        @import url(cita.css);
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../images/2.png" alt="Preppers&ChillLogo" id="inicio">
+    </div>
+
+    <nav>
+        <a href="../index.html">Volver</a>
+    </nav>
+
+    <h1>Pide tu cita</h1>
+
+    <form action="/action_page.php" target="_blank" style="color: black;">
+        <fieldset style=" border-color: black; ">
+            <legend> Datos personales</legend>
+            <label for="nombre">Nombre: </label> <input type="text" id="nombre" name="nombre" value="" required>
+            <br> <br>
+            <label for="apellidos">Apellidos: </label> <input type="text" id="apellidos" name="apellidos" value="">
+            <br>
+            <br>
+            <label for="email">Correo: </label> <input type="email" id="email" name="email" value=""
+                placeholder="tucorreo@algo.com" required>
+            <label for="tlf">Teléfono: </label> <input type="tel" id="tlf" name="tlf" placeholder="123-45-67-89"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required> <br>
+            <br>
+            <br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Elige el taller</legend>
+
+            <label type="dia">Día: </label>
+            <select id="dia" name="dia">
+                <option value="1">Lunes</option>
+                <option value="2">Martes</option>
+                <option value="3">Miércoles</option>
+                <option value="4">Jueves</option>
+                <option value="5">Viernes</option>
+            </select>
+            <br>
+            <br>
+            <label type="taller">Taller (Que se imparta ese día) </label>
+            <select id="taller" name="taller">
+                <option value="6">Teoría "Psicología prepper"</option>
+                <option value="7">Teoría "Primeros auxilios"</option>
+                <option value="8">Primeros Auxilios</option>
+                <option value="9">Teoría "Refugios"</option>
+                <option value="10">Refugios</option>
+                <option value="11">Teoría "Armas primitivas"</option>
+                <option value="12">Armas primitivas</option>
+                <option value="13">Teoría "Supervivencia urbana" y "Supervivencia en la naturaleza"</option>
+                <option value="14">Supervivencia urbana</option>
+            </select>
+            <br>
+            <br>
+            <p>¿Quieres añadir un comentario?</p>
+            <textarea name="mensaje" style="width:600px; height:100px; resize: none">Tu comentario aquí...</textarea>
+            <br>
+            <br>
+        </fieldset>
+
+        <br>
+        <input type="submit">
+        <br>
+        <br>
+    </form>
+
+    <div class="footer">
+        <div>
+            <h2>Enlaces externos</h2>
+            <p>Si necesitas ampliar información puedes consultar las siguientes páginas:</p>
+            <a href="https://www.preparacionistas.org/" target="_blank">Preppers España</a>
+            <a href="https://uspreppers.com/" target="_blank">Preppers USA</a>
+            <a href="https://prepperybushcraft.com/" target="_blank">Tienda de Bushcraft</a>
+        </div>
+    </div>
+</body>
+
+</html>
