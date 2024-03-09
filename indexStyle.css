@@ -8,69 +8,99 @@ html {
     height: 100%;
 }
 
-body{
+body {
     padding: 20px;
     color: black;
-    text-align: right;
+    text-align: center;
     background: beige;
     font-size: 15px;
 }
 
-header{
+.header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0px;
-    color: whitesmoke;
-    text-align: center;
+    text-align: left;
     background-image: url(images/back2.jpg);
     font-size: 1em;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    background: greenyellow;
+h1 {
+    font-size: 30px;
+    text-align: center;
 }
 
-nav a{
-    color: brown;
+p {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: sandybrown;
+}
+
+nav a {
+    color: rgb(172, 37, 37);
     text-decoration: none;
     padding: 20px;
     font-size: 20px;
 }
 
-nav a:hover{
-    background: blueviolet;
+nav a:hover {
+    background: rgb(19, 161, 19);
     color: burlywood;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px;
 }
 
-#img1{
-    background-color: beige;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-auto-rows: minmax(350px, auto);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
 }
 
-#img2{
-    background-color: beige;
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#img3{
-    background-color: beige;
+article {
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
 }
 
-article{
-    text-align: center;
+.article {
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer {
+    text-align: justify;
+    background-color: grey;
+    padding: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
 
 }
 
-footer{
-    text-align: center;
-}
-
-article img {
-    max-width: 100%;
-    height: auto;
+ul,
+ol,
+li {
+    margin: 10px;
+    padding: 5px;
 }
