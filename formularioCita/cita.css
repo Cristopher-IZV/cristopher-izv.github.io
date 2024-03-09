@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 20px;
+    color: black;
+    text-align: center;
+    background: beige;
+    font-size: 15px;
+}
